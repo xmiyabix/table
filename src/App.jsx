@@ -1,3 +1,4 @@
+import React from "react";
 function Header(){
     return(
         <header className="hero is-dark is bold">
@@ -66,7 +67,7 @@ function Table(){
 */
 function Buttongallery(){
     return(
-        <div className="columns is-mobile is-multiline">
+        <div className="columns is-multiline">
             <div className="column is-4"><Button /></div>
             <div className="column is-4"><Button /></div>
             <div className="column is-4"><Button /></div>
@@ -76,26 +77,7 @@ function Buttongallery(){
         </div>
     );
 }
-
-function Table(){
-    return(
-        <table className="table">
-            <thead>
-                <th>Icon</th>
-                <th>name</th>
-                <th>damage</th>
-                <th>penetration</th>
-            </thead>
-            <tr>
-                <td>none</td>
-                <tb>9*39 pst_gzh</tb>
-                <th>54</th>
-                <th>20</th>
-            </tr>
-        </table>
-    );
-}
-
+/*tableをつくって、データがわたされたら動的に変えていきたい*/
 function List(){
     return(
         <ul>
@@ -109,7 +91,6 @@ function Main(){
         <div className="columns is-vcented is-multiline">
             <div className="column is-3">
                 <Buttongallery />
-                <Table />
                 <List />
             </div>
         </div>
